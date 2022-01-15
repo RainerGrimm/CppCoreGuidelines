@@ -1,0 +1,16 @@
+int main(){
+  int x = 0;
+  atomic_int y = 0;
+  
+  {{{ 
+    {
+      x = 2000;
+      y.store(11);
+    }
+  ||| 
+    {
+      y.load();
+      x;
+    }
+  }}}
+}
