@@ -18,7 +18,7 @@ public:
 
 class MyClass2 {
   public:
-    MyClass2(int fir, double sec): x{fir}, y{sec} {};
+    MyClass2(int fir, double sec): x{fir}, y{sec} {}
   private: 
     int x;
     double y;
